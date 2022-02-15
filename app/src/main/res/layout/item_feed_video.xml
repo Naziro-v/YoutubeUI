@@ -20,7 +20,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/youtube" />
+                android:src="@drawable/youtube_1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,21 +31,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border_rounded_time"
+                    android:background="@drawable/border_round_time"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="5dp"
-                    android:text="1 : 05 : 08"
+                    android:paddingBottom="2dp"
+                    android:text="1:05:03"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
-
 
             </LinearLayout>
 
 
         </FrameLayout>
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -72,24 +69,23 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Eyhical Hacking Full Course - Learn Ethical Hacking in 10 hours"
                 android:textColor="@color/white"
-                android:text="Ethical Hacking Full Cource - Learn Ethical Hacking in 10 hours"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ethicalhacking • 7M views • 1 year ago"
+                android:text="ethicalhacking . 7M views . 1 year ago"
                 android:textColor="#90ffffff"
-                android:textSize="13sp"/>
-
-
+                android:textSize="13sp" />
 
         </LinearLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_more_vert_24"/>
+            android:src="@drawable/ic_baseline_more_vert_24" />
 
     </LinearLayout>
 

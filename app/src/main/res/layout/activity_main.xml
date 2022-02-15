@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
-        android:elevation="0dp">
+        app:elevation="0dp">
 
-        <Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:title="Youtube"
-            android:titleTextColor="#000000">
-
+            app:title="youtube"
+            app:titleTextColor="#000000">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:paddingRight="10dp">
+                android:paddingRight="16dp">
 
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:src="@drawable/img_2" />
+                    android:src="@drawable/image_youtube" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -43,7 +42,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:gravity="center_vertical|right"
                     android:orientation="horizontal">
 
@@ -57,13 +56,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_baseline_notifications_none_24" />
+                        android:src="@drawable/ic_outline_notifications_24" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/ic_baseline_search_24" />
+                        android:src="@drawable/ic_outline_search_24" />
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/iv_profile"
@@ -75,33 +74,33 @@
 
 
                 </LinearLayout>
-
-
             </LinearLayout>
-
-
-        </Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0.4dp"
-            android:background="#bdbdbd" />
+            android:background="#dbdbdb" />
+
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerfilter"
+            android:id="@+id/recyclerFilter"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="0dp" />
+            android:background="#000000"
+            android:orientation="horizontal" />
+
 
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerfeed"
+        android:id="@+id/recyclerFeed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#000000"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
